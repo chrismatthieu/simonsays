@@ -1,0 +1,21 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/cmatthie/Projects/simonsays/build/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/FaceAuthenticator/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/DeviceController/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/Discover/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/Logger/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/PacketManager/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/Matcher/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/FwUpdate/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/FwUpdate/Common/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/FwUpdate/F45x/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/src/FwUpdate/F46x/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/wrappers/cmake_install.cmake",
+		"C:/Users/cmatthie/Projects/simonsays/build/rsid_build/wrappers/c/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
