@@ -227,7 +227,7 @@ public:
     }
 };
 
-// ---- Pose loop callback (only used when AlgoFlow is PoseEstimationOnly) ----
+// ---- Pose loop callback: only receives pose (AlgoFlow::PoseEstimationOnly). g_authenticated is updated by periodic re-auth. ----
 class PoseLoopCallback : public RealSenseID::AuthenticationCallback {
 public:
     void OnResult(RealSenseID::AuthenticateStatus, const char*, short) override {}
@@ -243,7 +243,7 @@ bool init_sdl(SDL_Window*& window, SDL_Renderer*& renderer) {
         std::cerr << "SDL_Init: " << SDL_GetError() << std::endl;
         return false;
     }
-    window = SDL_CreateWindow("Simon Says - Stick Man",
+    window = SDL_CreateWindow("Simon Says - Can you make the stick man Dance?",
                               SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                               POSE_WINDOW_W, POSE_WINDOW_H, 0);
     if (!window) {
@@ -339,6 +339,16 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
             get_poses_copy(poses);
             draw_stick_man_gdi(hdc, poses);
         }
+        // Title on top so it is never covered by the stick man
+        RECT textRect = { 0, 4, rc.right, 44 };
+        SetTextColor(hdc, RGB(220, 255, 220));
+        HFONT font = CreateFontW(22, 0, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE,
+            DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY,
+            FF_DONTCARE, L"Segoe UI");
+        HGDIOBJ oldFont = SelectObject(hdc, font);
+        DrawTextW(hdc, L"Can you make the stick man Dance?", -1, &textRect, DT_CENTER | DT_TOP | DT_SINGLELINE);
+        SelectObject(hdc, oldFont);
+        DeleteObject(font);
         EndPaint(hwnd, &ps);
         return 0;
     }
@@ -526,16 +536,45 @@ int main(int argc, char** argv) {
     std::cout << "Authenticated as: " << auth_cb.authenticated_user_id << std::endl;
     g_authenticated = true;
 
-    // 3) Switch to pose-only mode and run loop in background
+    // 3) Pose stream (PoseEstimationOnly) for smooth stick man; re-auth every 10 s so mask/wrong person stops it
+    constexpr int REAUTH_INTERVAL_SEC = 10;
     dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::PoseEstimationOnly;
     authenticator.SetDeviceConfig(dev_config);
 
     PoseLoopCallback pose_cb;
-    std::thread pose_thread([&]() {
+    std::thread pose_thread;
+    std::mutex pose_thread_mutex;
+
+    auto run_pose_loop = [&]() {
         g_pose_loop_running = true;
         authenticator.AuthenticateLoop(pose_cb);
         g_pose_loop_running = false;
+    };
+
+    std::thread reauth_thread([&]() {
+        while (!g_quit) {
+            for (int i = 0; i < REAUTH_INTERVAL_SEC && !g_quit; ++i)
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+            if (g_quit) break;
+            std::lock_guard<std::mutex> lock(pose_thread_mutex);
+            authenticator.Cancel();
+            if (pose_thread.joinable()) pose_thread.join();
+            if (g_quit) break;
+            dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
+            authenticator.SetDeviceConfig(dev_config);
+            AuthCallback reauth_cb;
+            authenticator.Authenticate(reauth_cb);
+            g_authenticated = (reauth_cb.result == RealSenseID::AuthenticateStatus::Success);
+            dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::PoseEstimationOnly;
+            authenticator.SetDeviceConfig(dev_config);
+            pose_thread = std::thread(run_pose_loop);
+        }
     });
+
+    {
+        std::lock_guard<std::mutex> lock(pose_thread_mutex);
+        pose_thread = std::thread(run_pose_loop);
+    }
 
 #ifndef SIMONSAYS_NO_SDL
     SDL_Window* window = nullptr;
@@ -585,8 +624,13 @@ int main(int argc, char** argv) {
 #endif
 #endif
 
+    g_quit = true;
     authenticator.Cancel();
-    if (pose_thread.joinable()) pose_thread.join();
+    if (reauth_thread.joinable()) reauth_thread.join();
+    {
+        std::lock_guard<std::mutex> lock(pose_thread_mutex);
+        if (pose_thread.joinable()) pose_thread.join();
+    }
     g_authenticator_for_ctrl_c = nullptr;
     authenticator.Disconnect();
     std::cout << "Done." << std::endl;
