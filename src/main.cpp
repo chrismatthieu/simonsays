@@ -227,13 +227,13 @@ public:
     }
 };
 
-// ---- Pose loop callback: only receives pose (AlgoFlow::PoseEstimationOnly). g_authenticated is updated by periodic re-auth. ----
+// ---- Pose loop callback: only update poses when authenticated so stick man freezes when not. ----
 class PoseLoopCallback : public RealSenseID::AuthenticationCallback {
 public:
     void OnResult(RealSenseID::AuthenticateStatus, const char*, short) override {}
     void OnHint(RealSenseID::AuthenticateStatus, float) override {}
     void OnPoseDetected(const std::vector<RealSenseID::PersonPose>& poses, unsigned int) override {
-        update_poses(poses);
+        if (g_authenticated) update_poses(poses);  // only update when authenticated; otherwise last pose stays (frozen)
     }
 };
 
@@ -334,10 +334,11 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
         GetClientRect(hwnd, &rc);
         FillRect(hdc, &rc, (HBRUSH)GetStockObject(BLACK_BRUSH));
         SetBkMode(hdc, TRANSPARENT);
-        if (g_authenticated) {
+        // Always draw stick man (moves when authenticated, frozen on last pose when not)
+        {
             std::vector<RealSenseID::PersonPose> poses;
             get_poses_copy(poses);
-            draw_stick_man_gdi(hdc, poses);
+            if (!poses.empty()) draw_stick_man_gdi(hdc, poses);
         }
         // Title on top so it is never covered by the stick man
         RECT textRect = { 0, 4, rc.right, 44 };
@@ -594,13 +595,11 @@ int main(int argc, char** argv) {
         SDL_SetRenderDrawColor(renderer, 20, 20, 30, 255);
         SDL_RenderClear(renderer);
 
-        if (g_authenticated) {
+        // Always draw stick man (moves when authenticated, frozen on last pose when not)
+        {
             std::vector<RealSenseID::PersonPose> poses;
             get_poses_copy(poses);
-            draw_stick_man(renderer, poses);
-        } else {
-            // Locked: show message (no stick man)
-            (void)renderer;
+            if (!poses.empty()) draw_stick_man(renderer, poses);
         }
 
         SDL_RenderPresent(renderer);
