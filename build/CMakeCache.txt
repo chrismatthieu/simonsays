@@ -313,6 +313,9 @@ SDL2_INCLUDE_DIR:PATH=SDL2_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 SDL2_LIBRARY:FILEPATH=SDL2_LIBRARY-NOTFOUND
 
+//Build with RSID_SECURE=1 for pairing and in-app enrollment
+SIMONSAYS_SECURE:BOOL=OFF
+
 //Value Computed by CMake
 simonsays_BINARY_DIR:STATIC=C:/Users/cmatthie/Projects/simonsays/build
 

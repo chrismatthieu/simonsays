@@ -41,12 +41,16 @@ After you authenticate, the app switches the device to pose-only mode and render
 
    On Linux the default is `/dev/ttyACM0`; set `RSID_PORT` to the correct tty if needed.
 
+## Enrolling users (F460)
+
+On **F460**, enrollment from Simon Says often fails because the device may require **secure (paired) mode**. Enroll users with **Intel RealSense ID Viewer** (from the SDK), then run Simon Says and answer **n** to enroll. See **[ENROLL.md](ENROLL.md)** for building the viewer, pairing, and unpair options.
+
 ## Run
 
 1. Connect the RealSense ID device and note its COM port (e.g. in Device Manager under “Ports (COM & LPT)”).
-2. Run `simonsays.exe`.
+2. Run `run.cmd` from the project root (or set PATH to `build\bin` and run `simonsays.exe`).
 3. When prompted **Enroll a face? (y/n)**:
-   - **y**: Enroll a new user (follow the on-screen pose hints: center, up, down, left, right).
+   - **y**: Enroll a new user (may fail on F460; use the viewer — see [ENROLL.md](ENROLL.md)).
    - **n**: Skip enrollment (use an already enrolled face).
 4. **Authenticate**: Stand in front of the camera. The app runs face recognition once. If it succeeds, you’re “in.”
 5. **Stick man**: The window shows your pose as a stick figure. Move to make it dance. Close the window or press **Escape** to exit.

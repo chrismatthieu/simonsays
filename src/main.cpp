@@ -9,6 +9,10 @@
 #include "RealSenseID/FacePose.h"
 #include "RealSenseID/DiscoverDevices.h"
 #include "RealSenseID/Version.h"
+#ifdef RSID_SECURE
+#include "secure_mode_helper.h"
+#include <fstream>
+#endif
 #include <atomic>
 #include <csignal>
 #include <cstdlib>
@@ -106,11 +110,55 @@ bool discover_rsid_device(std::string& out_port, RealSenseID::DeviceType& out_ty
     return true;
 }
 
+static std::string g_serial_port_storage;
+
 RealSenseID::SerialConfig get_serial_config(const char* port) {
+    g_serial_port_storage = port;
     RealSenseID::SerialConfig c;
-    c.port = port;
+    c.port = g_serial_port_storage.c_str();
     return c;
 }
+
+#ifdef RSID_SECURE
+constexpr size_t RSID_DEVICE_PUBKEY_SIZE = 64;
+const char* RSID_DEVICE_KEY_FILE = ".rsid_device_key";
+
+bool load_device_pubkey(std::vector<unsigned char>& out_key) {
+    std::ifstream f(RSID_DEVICE_KEY_FILE, std::ios::binary);
+    if (!f) return false;
+    out_key.assign(std::istreambuf_iterator<char>(f), std::istreambuf_iterator<char>());
+    return out_key.size() == RSID_DEVICE_PUBKEY_SIZE;
+}
+
+bool save_device_pubkey(const unsigned char* key) {
+    std::ofstream f(RSID_DEVICE_KEY_FILE, std::ios::binary);
+    if (!f) return false;
+    f.write(reinterpret_cast<const char*>(key), RSID_DEVICE_PUBKEY_SIZE);
+    return f.good();
+}
+
+bool do_pair(RealSenseID::FaceAuthenticator& authenticator, RealSenseID::Samples::SignHelper& signer) {
+    const unsigned char* host_pub = signer.GetHostPubKey();
+    unsigned char host_sig[32] = {0};
+    if (!signer.Sign(host_pub, 64, host_sig)) {
+        std::cerr << "Failed to sign host public key." << std::endl;
+        return false;
+    }
+    char device_pubkey[64] = {0};
+    auto st = authenticator.Pair(reinterpret_cast<const char*>(host_pub), reinterpret_cast<const char*>(host_sig), device_pubkey);
+    if (st != RealSenseID::Status::Ok) {
+        std::cerr << "Pair failed: " << static_cast<int>(st) << std::endl;
+        return false;
+    }
+    signer.UpdateDevicePubKey(reinterpret_cast<unsigned char*>(device_pubkey));
+    if (!save_device_pubkey(reinterpret_cast<unsigned char*>(device_pubkey))) {
+        std::cerr << "Warning: could not save device key to " << RSID_DEVICE_KEY_FILE << std::endl;
+    } else {
+        std::cout << "Paired and saved device key to " << RSID_DEVICE_KEY_FILE << std::endl;
+    }
+    return true;
+}
+#endif
 
 // Latest pose from device (thread-safe)
 std::mutex g_pose_mutex;
@@ -373,7 +421,31 @@ int main(int argc, char** argv) {
     }
     std::cout << " found " << RealSenseID::Description(device_type) << " on " << port << std::endl;
 
+#ifdef RSID_SECURE
+    // This SDK version does not support secure (pairing) mode for F46x — only F45x.
+    if (device_type == RealSenseID::DeviceType::F46x) {
+        std::cerr << "This build uses secure mode (RSID_SECURE), which is not supported for F46x in this SDK." << std::endl;
+        std::cerr << "Options:" << std::endl;
+        std::cerr << "  1) Build without secure: unset SIMONSAYS_SECURE and run build.cmd; enroll with Intel RealSense ID Viewer, then run Simon Says and answer n to enroll." << std::endl;
+        std::cerr << "  2) Use an F45x device for in-app pairing and enrollment with this secure build." << std::endl;
+        return 1;
+    }
+    std::cout << "Secure mode: creating SignHelper..." << std::flush;
+    RealSenseID::Samples::SignHelper signer;
+    std::cout << " OK." << std::endl;
+    bool need_pair = true;
+    std::vector<unsigned char> saved_device_key;
+    if (load_device_pubkey(saved_device_key)) {
+        signer.UpdateDevicePubKey(saved_device_key.data());
+        std::cout << "Loaded device key from " << RSID_DEVICE_KEY_FILE << std::endl;
+        need_pair = false;
+    }
+    std::cout << "Creating authenticator (secure)..." << std::flush;
+    RealSenseID::FaceAuthenticator authenticator(&signer, device_type);
+    std::cout << " OK." << std::endl;
+#else
     RealSenseID::FaceAuthenticator authenticator(device_type);
+#endif
     std::cout << "Connecting..." << std::flush;
     auto status = authenticator.Connect(get_serial_config(port.c_str()));
     if (status != RealSenseID::Status::Ok) {
@@ -382,6 +454,17 @@ int main(int argc, char** argv) {
         return 1;
     }
     std::cout << " done.\n" << std::endl;
+
+#ifdef RSID_SECURE
+    if (need_pair) {
+        std::cout << "No device key found. Pairing with device..." << std::endl;
+        if (!do_pair(authenticator, signer)) {
+            std::cerr << "Pairing failed. Unpair the device in rsid-viewer if needed, then retry." << std::endl;
+            authenticator.Disconnect();
+            return 1;
+        }
+    }
+#endif
 
     g_authenticator_for_ctrl_c = &authenticator;
 

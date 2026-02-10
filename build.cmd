@@ -30,9 +30,17 @@ if not exist "%VCVARS%" (
 if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
 cd /d "%BUILD_DIR%"
 
+REM Optional: set SIMONSAYS_SECURE=1 for pairing + in-app enrollment (RSID_SECURE=1).
+REM When not 1, pass OFF so CMake cache is cleared (otherwise a previous ON build stays).
+if /i "%SIMONSAYS_SECURE%"=="1" (
+    set "SECURE_OPT=-DSIMONSAYS_SECURE=ON"
+) else (
+    set "SECURE_OPT=-DSIMONSAYS_SECURE=OFF"
+)
+
 REM Configure with Ninja (so SDK skips C#; uses MSVC from vcvars)
 call "%VCVARS%" >nul 2>&1
-"%CMAKE_EXE%" .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM="%NINJA_EXE%" -DRSID_SDK_PATH="%RSID_SDK%"
+"%CMAKE_EXE%" .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM="%NINJA_EXE%" -DRSID_SDK_PATH="%RSID_SDK%" %SECURE_OPT%
 if errorlevel 1 exit /b 1
 
 REM Build (must run in same env as configure so compiler is in PATH)

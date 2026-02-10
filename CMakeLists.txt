@@ -3,16 +3,28 @@ project(simonsays CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Optional: build with secure mode (pairing + enrollment). Requires mbedtls from SDK. F45x only in this SDK.
+# Use -DSIMONSAYS_SECURE=ON or =OFF; build.cmd passes OFF when env SIMONSAYS_SECURE is not 1.
+option(SIMONSAYS_SECURE "Build with RSID_SECURE=1 for pairing and in-app enrollment" OFF)
+message(STATUS "SIMONSAYS_SECURE=${SIMONSAYS_SECURE}")
+
 # RealSense ID SDK path (override with -DRSID_SDK_PATH=...)
 set(RSID_SDK_PATH "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard" CACHE PATH "RealSense ID SDK root")
 if(NOT EXISTS "${RSID_SDK_PATH}/CMakeLists.txt")
     message(FATAL_ERROR "RealSense ID SDK not found at ${RSID_SDK_PATH}. Set RSID_SDK_PATH to the SDK root.")
 endif()
 
-# Build the SDK library (no samples, no tools)
+# Build the SDK library (no samples, no tools). When secure, SDK builds with mbedtls.
 set(RSID_SAMPLES OFF CACHE BOOL "" FORCE)
 set(RSID_TOOLS OFF CACHE BOOL "" FORCE)
 set(RSID_MASTER_PROJECT OFF)
+if(SIMONSAYS_SECURE)
+    set(RSID_SECURE ON CACHE BOOL "" FORCE)
+    # Allow SDK's fetched mbedtls to configure with newer CMake
+    set(CMAKE_POLICY_VERSION_MINIMUM 3.5 CACHE STRING "" FORCE)
+else()
+    set(RSID_SECURE OFF CACHE BOOL "" FORCE)
+endif()
 add_subdirectory(${RSID_SDK_PATH} ${CMAKE_BINARY_DIR}/rsid_build)
 
 # SDL2 for stick man window
@@ -41,6 +53,13 @@ endif()
 
 target_include_directories(simonsays PRIVATE ${RSID_SDK_PATH}/include)
 target_link_libraries(simonsays PRIVATE rsid)
+
+if(SIMONSAYS_SECURE)
+    target_include_directories(simonsays PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/secure)
+    target_sources(simonsays PRIVATE secure/secure_mode_helper.cc)
+    target_compile_definitions(simonsays PRIVATE RSID_SECURE=1)
+    target_link_libraries(simonsays PRIVATE mbedtls mbedcrypto)
+endif()
 
 # Copy SDL2 DLL to output on Windows if found
 if(WIN32 AND SDL2_FOUND)
