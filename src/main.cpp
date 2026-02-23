@@ -305,9 +305,22 @@ void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::Perso
     }
     double poseH = maxY - minY;
     if (poseH <= 0) poseH = CAM_HEIGHT;
-    double scale = static_cast<double>(clientH) / poseH; // full height
     double centerX = (minX + maxX) * 0.5;
-    double centerY = (minY + maxY) * 0.5;
+    // Head/face extent so we fit stick man + face in window (face sits above head)
+    double hx = centerX, hy = minY + poseH * 0.15;
+    if (p.lm_x[0] != 0 || p.lm_y[0] != 0) { hx = static_cast<double>(p.lm_x[0]); hy = static_cast<double>(p.lm_y[0]); }
+    else if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
+        { hx = (p.lm_x[1] + p.lm_x[2]) * 0.5; hy = (p.lm_y[1] + p.lm_y[2]) * 0.5; }
+    double shoulder_mid_y = (p.lm_x[5] != 0 || p.lm_y[5] != 0 || p.lm_x[6] != 0 || p.lm_y[6] != 0)
+        ? (p.lm_y[5] + p.lm_y[6]) * 0.5 : (hy + poseH * 0.15);
+    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
+    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
+    double effective_minY = minY - head_radius_cam;
+    double effective_maxY = maxY;
+    double effective_poseH = effective_maxY - effective_minY;
+    if (effective_poseH <= 0) effective_poseH = poseH + 2.0 * head_radius_cam;
+    double scale = static_cast<double>(clientH) / effective_poseH;
+    double centerY = (effective_minY + effective_maxY) * 0.5;
     double offX = clientW * 0.5;
     double offY = clientH * 0.5;
 
@@ -339,18 +352,6 @@ void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::Perso
     }
 
     // Smiley (authenticated) or frowny (not authenticated) on head
-    auto head_center = [&]() -> std::pair<double, double> {
-        if (p.lm_x[0] != 0 || p.lm_y[0] != 0) return { static_cast<double>(p.lm_x[0]), static_cast<double>(p.lm_y[0]) };
-        if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
-            return { (p.lm_x[1] + p.lm_x[2]) * 0.5, (p.lm_y[1] + p.lm_y[2]) * 0.5 };
-        return { centerX, minY + poseH * 0.15 };
-    };
-    double hx = 0, hy = 0;
-    { auto [x, y] = head_center(); hx = x; hy = y; }
-    double shoulder_mid_y = (p.lm_y[5] + p.lm_y[6]) * 0.5;
-    if (p.lm_x[5] == 0 && p.lm_y[5] == 0 && p.lm_x[6] == 0 && p.lm_y[6] == 0) shoulder_mid_y = hy + poseH * 0.15;
-    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
-    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
     auto [face_cx, face_cy] = to_screen(hx, hy);
     int face_r = static_cast<int>(head_radius_cam * scale);
     if (face_r < 8) face_r = 8;
@@ -451,9 +452,22 @@ void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<Rea
     }
     double poseH = maxY - minY;
     if (poseH <= 0) poseH = CAM_HEIGHT;
-    double scale = static_cast<double>(clientH) / poseH; // full height
     double centerX = (minX + maxX) * 0.5;
-    double centerY = (minY + maxY) * 0.5;
+    // Head/face extent so we fit stick man + face in window (face sits above head)
+    double hx = centerX, hy = minY + poseH * 0.15;
+    if (p.lm_x[0] != 0 || p.lm_y[0] != 0) { hx = static_cast<double>(p.lm_x[0]); hy = static_cast<double>(p.lm_y[0]); }
+    else if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
+        { hx = (p.lm_x[1] + p.lm_x[2]) * 0.5; hy = (p.lm_y[1] + p.lm_y[2]) * 0.5; }
+    double shoulder_mid_y = (p.lm_x[5] != 0 || p.lm_y[5] != 0 || p.lm_x[6] != 0 || p.lm_y[6] != 0)
+        ? (p.lm_y[5] + p.lm_y[6]) * 0.5 : (hy + poseH * 0.15);
+    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
+    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
+    double effective_minY = minY - head_radius_cam;
+    double effective_maxY = maxY;
+    double effective_poseH = effective_maxY - effective_minY;
+    if (effective_poseH <= 0) effective_poseH = poseH + 2.0 * head_radius_cam;
+    double scale = static_cast<double>(clientH) / effective_poseH;
+    double centerY = (effective_minY + effective_maxY) * 0.5;
     double offX = clientW * 0.5;
     double offY = clientH * 0.5;
 
@@ -488,18 +502,6 @@ void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<Rea
     }
 
     // Smiley (authenticated) or frowny (not authenticated) on head
-    auto head_center = [&]() -> std::pair<double, double> {
-        if (p.lm_x[0] != 0 || p.lm_y[0] != 0) return { static_cast<double>(p.lm_x[0]), static_cast<double>(p.lm_y[0]) };
-        if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
-            return { (p.lm_x[1] + p.lm_x[2]) * 0.5, (p.lm_y[1] + p.lm_y[2]) * 0.5 };
-        return { centerX, minY + poseH * 0.15 };
-    };
-    double hx = 0, hy = 0;
-    { auto [x, y] = head_center(); hx = x; hy = y; }
-    double shoulder_mid_y = (p.lm_y[5] + p.lm_y[6]) * 0.5;
-    if (p.lm_x[5] == 0 && p.lm_y[5] == 0 && p.lm_x[6] == 0 && p.lm_y[6] == 0) shoulder_mid_y = hy + poseH * 0.15;
-    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
-    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
     auto [face_cx, face_cy] = to_screen(hx, hy);
     int face_r = static_cast<int>(head_radius_cam * scale);
     if (face_r < 8) face_r = 8;
