@@ -9,7 +9,7 @@ option(SIMONSAYS_SECURE "Build with RSID_SECURE=1 for pairing and in-app enrollm
 message(STATUS "SIMONSAYS_SECURE=${SIMONSAYS_SECURE}")
 
 # RealSense ID SDK path (override with -DRSID_SDK_PATH=...)
-set(RSID_SDK_PATH "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard" CACHE PATH "RealSense ID SDK root")
+set(RSID_SDK_PATH "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24" CACHE PATH "RealSense ID SDK root")
 if(NOT EXISTS "${RSID_SDK_PATH}/CMakeLists.txt")
     message(FATAL_ERROR "RealSense ID SDK not found at ${RSID_SDK_PATH}. Set RSID_SDK_PATH to the SDK root.")
 endif()

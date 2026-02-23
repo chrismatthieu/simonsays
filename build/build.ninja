@@ -53,7 +53,7 @@ build CMakeFiles\simonsays.dir\src\main.cpp.obj: CXX_COMPILER__simonsays_unscann
   CONFIG = Release
   DEFINES = -DSIMONSAYS_NO_SDL
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include
   OBJECT_DIR = CMakeFiles\simonsays.dir
   OBJECT_FILE_DIR = CMakeFiles\simonsays.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\simonsays.dir\
@@ -137,7 +137,7 @@ build rsid_build\rebuild_cache: phony rsid_build\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -149,352 +149,352 @@ build rsid_build\rebuild_cache: phony rsid_build\CMakeFiles\rebuild_cache.util
 
 build cmake_object_order_depends_target_rsid: phony || .
 
-build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\FaceAuthenticatorApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\FaceAuthenticatorApi.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\FaceAuthenticatorApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\FaceAuthenticatorApi.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorCommon.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\Impl\FaceAuthenticatorCommon.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorCommon.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\Impl\FaceAuthenticatorCommon.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\Impl\FaceAuthenticatorF45x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\Impl\FaceAuthenticatorF45x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\Impl\FaceAuthenticatorF46x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl\FaceAuthenticatorF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\Impl\FaceAuthenticatorF46x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FaceAuthenticator\Impl
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\DeviceController\DeviceControllerApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\DeviceController\DeviceControllerApi.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\DeviceController\DeviceControllerApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\DeviceController\DeviceControllerApi.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\DeviceController
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\DeviceController\DeviceControllerImpl.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\DeviceController\DeviceControllerImpl.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\DeviceController\DeviceControllerImpl.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\DeviceController\DeviceControllerImpl.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\DeviceController
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\StatusHelper.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\StatusHelper.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\StatusHelper.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\StatusHelper.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\Version.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Version.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\Version.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Version.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\Discover\DiscoverDevices_Win32.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Discover\DiscoverDevices_Win32.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\Discover\DiscoverDevices_Win32.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Discover\DiscoverDevices_Win32.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\Discover
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\Logger\LoggingApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger\LoggingApi.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\Logger\LoggingApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger\LoggingApi.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\Logger
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\Logger\Logger.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger\Logger.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\Logger\Logger.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger\Logger.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\Logger
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Randomizer.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\Randomizer.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Randomizer.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\Randomizer.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\PacketSender.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\PacketSender.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\PacketSender.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\PacketSender.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\SerialPacket.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\SerialPacket.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\SerialPacket.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\SerialPacket.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Timer.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\Timer.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Timer.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\Timer.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Crc16.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\Crc16.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\Crc16.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\Crc16.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\WindowsSerial.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\WindowsSerial.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\WindowsSerial.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\WindowsSerial.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\NonSecureSession.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\NonSecureSession.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\PacketManager\NonSecureSession.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\NonSecureSession.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\PacketManager
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\Matcher\Matcher.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher\Matcher.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\Matcher\Matcher.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher\Matcher.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\Matcher
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\FwUpdaterApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\FwUpdaterApi.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\FwUpdaterApi.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\FwUpdaterApi.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\Common\Common.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\Common\Common.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\Common\Common.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\Common\Common.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\Common
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\Utilities.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\Utilities.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\Utilities.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\Utilities.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\Cmds.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\Cmds.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\Cmds.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\Cmds.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdaterCommF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\FwUpdaterCommF45x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdaterCommF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\FwUpdaterCommF45x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdateEngineF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\FwUpdateEngineF45x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdateEngineF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\FwUpdateEngineF45x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdaterF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\FwUpdaterF45x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x\FwUpdaterF45x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\FwUpdaterF45x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F45x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\Utilities.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\Utilities.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\Utilities.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\Utilities.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\Cmds.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\Cmds.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\Cmds.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\Cmds.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdaterCommF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\FwUpdaterCommF46x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdaterCommF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\FwUpdaterCommF46x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdateEngineF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\FwUpdateEngineF46x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdateEngineF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\FwUpdateEngineF46x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdaterF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\FwUpdaterF46x.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x\FwUpdaterF46x.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\FwUpdaterF46x.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir\FwUpdate\F46x
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
   TARGET_PDB = bin\rsid.pdb
   TARGET_SUPPORT_DIR = rsid_build\src\CMakeFiles\rsid.dir
 
-build rsid_build\src\CMakeFiles\rsid.dir\UpdateCheckerNotImpl.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\UpdateCheckerNotImpl.cc || cmake_object_order_depends_target_rsid
+build rsid_build\src\CMakeFiles\rsid.dir\UpdateCheckerNotImpl.cc.obj: CXX_COMPILER__rsid_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\UpdateCheckerNotImpl.cc || cmake_object_order_depends_target_rsid
   CONFIG = Release
   DEFINES = -DRSID_DEBUG_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\3rdparty\spdlog_1_8_0\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\3rdparty\spdlog_1_8_0\include
   OBJECT_DIR = rsid_build\src\CMakeFiles\rsid.dir
   OBJECT_FILE_DIR = rsid_build\src\CMakeFiles\rsid.dir
   TARGET_COMPILE_PDB = rsid_build\src\CMakeFiles\rsid.dir\
@@ -556,7 +556,7 @@ build rsid_build\src\rebuild_cache: phony rsid_build\src\CMakeFiles\rebuild_cach
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -585,7 +585,7 @@ build rsid_build\src\FaceAuthenticator\rebuild_cache: phony rsid_build\src\FaceA
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -614,7 +614,7 @@ build rsid_build\src\DeviceController\rebuild_cache: phony rsid_build\src\Device
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -643,7 +643,7 @@ build rsid_build\src\Discover\rebuild_cache: phony rsid_build\src\Discover\CMake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -672,7 +672,7 @@ build rsid_build\src\Logger\rebuild_cache: phony rsid_build\src\Logger\CMakeFile
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -701,7 +701,7 @@ build rsid_build\src\PacketManager\rebuild_cache: phony rsid_build\src\PacketMan
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -730,7 +730,7 @@ build rsid_build\src\Matcher\rebuild_cache: phony rsid_build\src\Matcher\CMakeFi
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -759,7 +759,7 @@ build rsid_build\src\FwUpdate\rebuild_cache: phony rsid_build\src\FwUpdate\CMake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/FwUpdate/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/FwUpdate/CMakeLists.txt
 # =============================================================================
 
 
@@ -788,7 +788,7 @@ build rsid_build\src\FwUpdate\Common\rebuild_cache: phony rsid_build\src\FwUpdat
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/FwUpdate/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/FwUpdate/CMakeLists.txt
 # =============================================================================
 
 
@@ -817,7 +817,7 @@ build rsid_build\src\FwUpdate\F45x\rebuild_cache: phony rsid_build\src\FwUpdate\
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/FwUpdate/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/FwUpdate/CMakeLists.txt
 # =============================================================================
 
 
@@ -846,7 +846,7 @@ build rsid_build\src\FwUpdate\F46x\rebuild_cache: phony rsid_build\src\FwUpdate\
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt
 # =============================================================================
 
 
@@ -875,7 +875,7 @@ build rsid_build\wrappers\rebuild_cache: phony rsid_build\wrappers\CMakeFiles\re
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/wrappers/CMakeLists.txt
+# C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/wrappers/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -887,44 +887,44 @@ build rsid_build\wrappers\rebuild_cache: phony rsid_build\wrappers\CMakeFiles\re
 
 build cmake_object_order_depends_target_rsid_c: phony || cmake_object_order_depends_target_rsid
 
-build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_client.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\src\rsid_c_client.cc || cmake_object_order_depends_target_rsid_c
+build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_client.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\src\rsid_c_client.cc || cmake_object_order_depends_target_rsid_c
   CONFIG = Release
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_c_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include
   OBJECT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
   OBJECT_FILE_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src
   TARGET_COMPILE_PDB = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\
   TARGET_PDB = bin\rsid_c.pdb
   TARGET_SUPPORT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
 
-build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_device_controller.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\src\rsid_c_device_controller.cc || cmake_object_order_depends_target_rsid_c
+build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_device_controller.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\src\rsid_c_device_controller.cc || cmake_object_order_depends_target_rsid_c
   CONFIG = Release
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_c_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include
   OBJECT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
   OBJECT_FILE_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src
   TARGET_COMPILE_PDB = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\
   TARGET_PDB = bin\rsid_c.pdb
   TARGET_SUPPORT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
 
-build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_update_checker.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\src\rsid_c_update_checker.cc || cmake_object_order_depends_target_rsid_c
+build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_update_checker.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\src\rsid_c_update_checker.cc || cmake_object_order_depends_target_rsid_c
   CONFIG = Release
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_c_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include
   OBJECT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
   OBJECT_FILE_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src
   TARGET_COMPILE_PDB = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\
   TARGET_PDB = bin\rsid_c.pdb
   TARGET_SUPPORT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
 
-build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_fw_updater.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\src\rsid_c_fw_updater.cc || cmake_object_order_depends_target_rsid_c
+build rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src\rsid_c_fw_updater.cc.obj: CXX_COMPILER__rsid_c_unscanned_Release C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\src\rsid_c_fw_updater.cc || cmake_object_order_depends_target_rsid_c
   CONFIG = Release
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING -Drsid_c_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /Zc:__cplusplus /MP /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\include -IC:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\..\include
+  INCLUDES = -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\include -IC:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\..\include
   OBJECT_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir
   OBJECT_FILE_DIR = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\src
   TARGET_COMPILE_PDB = rsid_build\wrappers\c\CMakeFiles\rsid_c.dir\
@@ -1108,14 +1108,14 @@ build rsid_build\wrappers\c\all: phony bin\rsid_c.dll
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:\Users\cmatthie\Projects\simonsays\build\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FaceAuthenticator\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\DeviceController\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Discover\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Logger\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\PacketManager\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Matcher\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\Common\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\F45x\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\F46x\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\wrappers\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\wrappers\c\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\OS.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\SpdLog.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\Version.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\flags.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\DeviceController\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Discover\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\Common\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\CMakeLists.txt C$:\Users\cmatthie\Projects\simonsays\CMakeLists.txt CMakeCache.txt CMakeFiles\4.2.3\CMakeCCompiler.cmake CMakeFiles\4.2.3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3\CMakeRCCompiler.cmake CMakeFiles\4.2.3\CMakeSystem.cmake
+build build.ninja C$:\Users\cmatthie\Projects\simonsays\build\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FaceAuthenticator\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\DeviceController\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Discover\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Logger\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\PacketManager\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\Matcher\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\Common\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\F45x\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\src\FwUpdate\F46x\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\wrappers\cmake_install.cmake C$:\Users\cmatthie\Projects\simonsays\build\rsid_build\wrappers\c\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\OS.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\SpdLog.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\Version.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\flags.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\DeviceController\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Discover\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\Common\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\CMakeLists.txt C$:\Users\cmatthie\Projects\simonsays\CMakeLists.txt CMakeCache.txt CMakeFiles\4.2.3\CMakeCCompiler.cmake CMakeFiles\4.2.3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3\CMakeRCCompiler.cmake CMakeFiles\4.2.3\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\OS.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\SpdLog.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\Version.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\cmake\flags.cmake C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\DeviceController\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Discover\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FaceAuthenticator\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\Common\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F45x\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\FwUpdate\F46x\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Logger\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\Matcher\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\src\PacketManager\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\CMakeLists.txt C$:\Users\cmatthie\Documents\SDK_2.7.3.0701_471615c_Standard\wrappers\c\CMakeLists.txt C$:\Users\cmatthie\Projects\simonsays\CMakeLists.txt CMakeCache.txt CMakeFiles\4.2.3\CMakeCCompiler.cmake CMakeFiles\4.2.3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3\CMakeRCCompiler.cmake CMakeFiles\4.2.3\CMakeSystem.cmake: phony
+build C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FeatureSummary.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\OS.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\SpdLog.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\Version.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\cmake\flags.cmake C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\DeviceController\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Discover\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FaceAuthenticator\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\Common\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F45x\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\FwUpdate\F46x\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Logger\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\Matcher\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\src\PacketManager\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\CMakeLists.txt C$:\Users\cmatthie\Downloads\for-mathiew\for-mathiew\SDK_3.0.2.1802_67dfd24\wrappers\c\CMakeLists.txt C$:\Users\cmatthie\Projects\simonsays\CMakeLists.txt CMakeCache.txt CMakeFiles\4.2.3\CMakeCCompiler.cmake CMakeFiles\4.2.3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3\CMakeRCCompiler.cmake CMakeFiles\4.2.3\CMakeSystem.cmake: phony
 
 
 #############################################

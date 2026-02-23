@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/FwUpdate/F45x
+# Install script for directory: C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/FwUpdate/F45x
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

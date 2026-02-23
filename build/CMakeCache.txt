@@ -138,16 +138,16 @@ CMAKE_PROJECT_NAME:STATIC=simonsays
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=2.7.3
+CMAKE_PROJECT_VERSION:STATIC=3.0.2
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=2
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=7
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=3
+CMAKE_PROJECT_VERSION_PATCH:STATIC=2
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -233,13 +233,16 @@ LibRealSenseID_C_BINARY_DIR:STATIC=C:/Users/cmatthie/Projects/simonsays/build/rs
 LibRealSenseID_C_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-LibRealSenseID_C_SOURCE_DIR:STATIC=C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/wrappers/c
+LibRealSenseID_C_SOURCE_DIR:STATIC=C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/wrappers/c
 
 //Value Computed by CMake
 LibRealSenseID_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-LibRealSenseID_SOURCE_DIR:STATIC=C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src
+LibRealSenseID_SOURCE_DIR:STATIC=C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src
+
+//Build C# wrapper (requires C# compiler)
+RSID_CSHARP:BOOL=ON
 
 //Log everything to console
 RSID_DEBUG_CONSOLE:BOOL=ON
@@ -284,10 +287,13 @@ RSID_PY:BOOL=OFF
 RSID_SAMPLES:BOOL=OFF
 
 //RealSense ID SDK root
-RSID_SDK_PATH:PATH=C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard
+RSID_SDK_PATH:PATH=C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24
 
 //Enable secure communication with device
 RSID_SECURE:BOOL=OFF
+
+//Build unit tests
+RSID_TESTS:BOOL=OFF
 
 //Enable clang-tidy
 RSID_TIDY:BOOL=OFF
@@ -302,7 +308,7 @@ RealSenseID_BINARY_DIR:STATIC=C:/Users/cmatthie/Projects/simonsays/build/rsid_bu
 RealSenseID_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-RealSenseID_SOURCE_DIR:STATIC=C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard
+RealSenseID_SOURCE_DIR:STATIC=C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24
 
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=SDL2_DIR-NOTFOUND

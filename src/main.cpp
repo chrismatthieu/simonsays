@@ -14,12 +14,14 @@
 #include <fstream>
 #endif
 #include <atomic>
-#include <csignal>
-#include <cstdlib>
 #include <chrono>
 #include <condition_variable>
+#include <csignal>
+#include <cstdlib>
+#include <functional>
 #include <iostream>
 #include <mutex>
+#include <random>
 #include <string>
 #include <thread>
 #include <vector>
@@ -40,8 +42,9 @@
 namespace {
 
 const char* DEFAULT_USER_ID = "player1";
-constexpr int POSE_WINDOW_W = 640;
-constexpr int POSE_WINDOW_H = 480;
+// Portrait aspect for tall/vertical monitor: stick man fills height, centered
+constexpr int POSE_WINDOW_W = 540;
+constexpr int POSE_WINDOW_H = 960;
 // Camera frame size used by RealSense ID for pose (FHD)
 constexpr double CAM_WIDTH = 1920.0;
 constexpr double CAM_HEIGHT = 1080.0;
@@ -166,6 +169,8 @@ std::vector<RealSenseID::PersonPose> g_latest_poses;
 std::atomic<bool> g_authenticated{false};
 std::atomic<bool> g_pose_loop_running{false};
 std::atomic<bool> g_quit{false};
+std::atomic<bool> g_authenticating{false};  // true while periodic re-auth is running (show "Hold still...")
+std::atomic<bool> g_want_enroll{false};     // set when user presses E to enroll a new user
 
 // So Ctrl+C handler can call Cancel() on the SDK
 static RealSenseID::FaceAuthenticator* g_authenticator_for_ctrl_c = nullptr;
@@ -227,15 +232,15 @@ public:
     }
 };
 
-// ---- Pose loop callback: only update poses when authenticated so stick man freezes when not. ----
-class PoseLoopCallback : public RealSenseID::AuthenticationCallback {
-public:
-    void OnResult(RealSenseID::AuthenticateStatus, const char*, short) override {}
-    void OnHint(RealSenseID::AuthenticateStatus, float) override {}
-    void OnPoseDetected(const std::vector<RealSenseID::PersonPose>& poses, unsigned int) override {
-        if (g_authenticated) update_poses(poses);  // only update when authenticated; otherwise last pose stays (frozen)
-    }
-};
+// Pose updates only when authenticated (stick man freezes when not). Used inside DetectPoses callback (SDK 3).
+
+// Generate a random user id for in-game enrollment (no keyboard input).
+static std::string make_random_user_id() {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> dis(1000, 9999);
+    return "player_" + std::to_string(dis(gen));
+}
 
 #ifndef SIMONSAYS_NO_SDL
 bool init_sdl(SDL_Window*& window, SDL_Renderer*& renderer) {
@@ -263,18 +268,42 @@ bool init_sdl(SDL_Window*& window, SDL_Renderer*& renderer) {
 
 void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::PersonPose>& poses) {
     if (poses.empty()) return;
+    int clientW = 0, clientH = 0;
+    if (SDL_GetRendererOutputSize(renderer, &clientW, &clientH) != 0 || clientW <= 0 || clientH <= 0)
+        return;
     const auto& p = poses[0];
-    double scaleX = POSE_WINDOW_W / CAM_WIDTH;
-    double scaleY = POSE_WINDOW_H / CAM_HEIGHT;
+    // Bounding box of valid keypoints (camera space)
+    double minX = CAM_WIDTH, maxX = 0, minY = CAM_HEIGHT, maxY = 0;
+    for (int i = 0; i < NUM_POSE_LANDMARKS; i++) {
+        if (p.lm_x[i] == 0 && p.lm_y[i] == 0) continue;
+        double x = static_cast<double>(p.lm_x[i]);
+        double y = static_cast<double>(p.lm_y[i]);
+        if (x < minX) minX = x;
+        if (x > maxX) maxX = x;
+        if (y < minY) minY = y;
+        if (y > maxY) maxY = y;
+    }
+    double poseH = maxY - minY;
+    if (poseH <= 0) poseH = CAM_HEIGHT;
+    double scale = static_cast<double>(clientH) / poseH; // full height
+    double centerX = (minX + maxX) * 0.5;
+    double centerY = (minY + maxY) * 0.5;
+    double offX = clientW * 0.5;
+    double offY = clientH * 0.5;
+
+    auto to_screen = [&](double px, double py) -> std::pair<int, int> {
+        return { static_cast<int>((px - centerX) * scale + offX),
+                 static_cast<int>((py - centerY) * scale + offY) };
+    };
 
     auto draw_line = [&](int i, int j) {
         if (i >= NUM_POSE_LANDMARKS || j >= NUM_POSE_LANDMARKS) return;
         uint32_t x0 = p.lm_x[i], y0 = p.lm_y[i], x1 = p.lm_x[j], y1 = p.lm_y[j];
         if (x0 == 0 && y0 == 0) return;
         if (x1 == 0 && y1 == 0) return;
-        SDL_RenderDrawLine(renderer,
-                           static_cast<int>(x0 * scaleX), static_cast<int>(y0 * scaleY),
-                           static_cast<int>(x1 * scaleX), static_cast<int>(y1 * scaleY));
+        auto [sx0, sy0] = to_screen(static_cast<double>(x0), static_cast<double>(y0));
+        auto [sx1, sy1] = to_screen(static_cast<double>(x1), static_cast<double>(y1));
+        SDL_RenderDrawLine(renderer, sx0, sy0, sx1, sy1);
     };
 
     SDL_SetRenderDrawColor(renderer, 0, 200, 100, 255);
@@ -284,8 +313,7 @@ void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::Perso
     SDL_SetRenderDrawColor(renderer, 255, 220, 0, 255);
     for (int i = 0; i < NUM_POSE_LANDMARKS; i++) {
         if (p.lm_x[i] == 0 && p.lm_y[i] == 0) continue;
-        int cx = static_cast<int>(p.lm_x[i] * scaleX);
-        int cy = static_cast<int>(p.lm_y[i] * scaleY);
+        auto [cx, cy] = to_screen(static_cast<double>(p.lm_x[i]), static_cast<double>(p.lm_y[i]));
         SDL_Rect r = { cx - 4, cy - 4, 8, 8 };
         SDL_RenderFillRect(renderer, &r);
     }
@@ -294,19 +322,71 @@ void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::Perso
 
 #ifdef SIMONSAYS_NO_SDL
 #ifdef _WIN32
-void draw_stick_man_gdi(HDC hdc, const std::vector<RealSenseID::PersonPose>& poses) {
-    if (poses.empty()) return;
+// Context passed to the stick man window so E key can trigger enrollment (no keyboard id input).
+struct GameContext {
+    RealSenseID::FaceAuthenticator* auth = nullptr;
+    RealSenseID::DeviceConfig* dev_cfg = nullptr;
+    std::thread* pose_thread = nullptr;
+    std::mutex* pose_mutex = nullptr;
+    std::function<void()> start_pose_loop;
+};
+
+static void do_enroll_from_game(GameContext* ctx) {
+    if (!ctx || !ctx->auth || !ctx->pose_mutex || !ctx->start_pose_loop) return;
+    std::lock_guard<std::mutex> lock(*ctx->pose_mutex);
+    ctx->auth->Cancel();
+    if (ctx->pose_thread && ctx->pose_thread->joinable()) ctx->pose_thread->join();
+    if (g_quit) return;
+    if (ctx->dev_cfg) {
+        ctx->dev_cfg->algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
+        ctx->auth->SetDeviceConfig(*ctx->dev_cfg);
+    }
+    std::string user_id = make_random_user_id();
+    EnrollCallback enroll_cb;
+    auto st = ctx->auth->Enroll(enroll_cb, user_id.c_str());
+    if (st == RealSenseID::Status::Ok) {
+        g_authenticated = true;
+        std::cout << "Enrolled new user: " << user_id << std::endl;
+    }
+    if (ctx->pose_thread && !g_quit) *ctx->pose_thread = std::thread(ctx->start_pose_loop);
+}
+
+void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<RealSenseID::PersonPose>& poses) {
+    if (poses.empty() || clientW <= 0 || clientH <= 0) return;
     const auto& p = poses[0];
-    double scaleX = POSE_WINDOW_W / CAM_WIDTH;
-    double scaleY = POSE_WINDOW_H / CAM_HEIGHT;
+    // Bounding box of valid keypoints (camera space)
+    double minX = CAM_WIDTH, maxX = 0, minY = CAM_HEIGHT, maxY = 0;
+    for (int i = 0; i < NUM_POSE_LANDMARKS; i++) {
+        if (p.lm_x[i] == 0 && p.lm_y[i] == 0) continue;
+        double x = static_cast<double>(p.lm_x[i]);
+        double y = static_cast<double>(p.lm_y[i]);
+        if (x < minX) minX = x;
+        if (x > maxX) maxX = x;
+        if (y < minY) minY = y;
+        if (y > maxY) maxY = y;
+    }
+    double poseH = maxY - minY;
+    if (poseH <= 0) poseH = CAM_HEIGHT;
+    double scale = static_cast<double>(clientH) / poseH; // full height
+    double centerX = (minX + maxX) * 0.5;
+    double centerY = (minY + maxY) * 0.5;
+    double offX = clientW * 0.5;
+    double offY = clientH * 0.5;
+
+    auto to_screen = [&](double px, double py) -> std::pair<int, int> {
+        return { static_cast<int>((px - centerX) * scale + offX),
+                 static_cast<int>((py - centerY) * scale + offY) };
+    };
 
     auto draw_line = [&](int i, int j) {
         if (i >= NUM_POSE_LANDMARKS || j >= NUM_POSE_LANDMARKS) return;
         uint32_t x0 = p.lm_x[i], y0 = p.lm_y[i], x1 = p.lm_x[j], y1 = p.lm_y[j];
         if (x0 == 0 && y0 == 0) return;
         if (x1 == 0 && y1 == 0) return;
-        MoveToEx(hdc, static_cast<int>(x0 * scaleX), static_cast<int>(y0 * scaleY), nullptr);
-        LineTo(hdc, static_cast<int>(x1 * scaleX), static_cast<int>(y1 * scaleY));
+        auto [sx0, sy0] = to_screen(static_cast<double>(x0), static_cast<double>(y0));
+        auto [sx1, sy1] = to_screen(static_cast<double>(x1), static_cast<double>(y1));
+        MoveToEx(hdc, sx0, sy0, nullptr);
+        LineTo(hdc, sx1, sy1);
     };
 
     SelectObject(hdc, GetStockObject(DC_PEN));
@@ -319,14 +399,16 @@ void draw_stick_man_gdi(HDC hdc, const std::vector<RealSenseID::PersonPose>& pos
     SetDCPenColor(hdc, RGB(255, 220, 0));
     for (int i = 0; i < NUM_POSE_LANDMARKS; i++) {
         if (p.lm_x[i] == 0 && p.lm_y[i] == 0) continue;
-        int cx = static_cast<int>(p.lm_x[i] * scaleX);
-        int cy = static_cast<int>(p.lm_y[i] * scaleY);
+        auto [cx, cy] = to_screen(static_cast<double>(p.lm_x[i]), static_cast<double>(p.lm_y[i]));
         Ellipse(hdc, cx - 5, cy - 5, cx + 5, cy + 5);
     }
 }
 
 LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
+    case WM_CREATE:
+        SetWindowLongPtrW(hwnd, GWLP_USERDATA, (LONG_PTR)((LPCREATESTRUCT)lParam)->lpCreateParams);
+        return 0;
     case WM_PAINT: {
         PAINTSTRUCT ps;
         HDC hdc = BeginPaint(hwnd, &ps);
@@ -338,7 +420,7 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
         {
             std::vector<RealSenseID::PersonPose> poses;
             get_poses_copy(poses);
-            if (!poses.empty()) draw_stick_man_gdi(hdc, poses);
+            if (!poses.empty()) draw_stick_man_gdi(hdc, rc.right, rc.bottom, poses);
         }
         // Title on top so it is never covered by the stick man
         RECT textRect = { 0, 4, rc.right, 44 };
@@ -347,21 +429,42 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
             DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY,
             FF_DONTCARE, L"Segoe UI");
         HGDIOBJ oldFont = SelectObject(hdc, font);
-        DrawTextW(hdc, L"Can you make the stick man Dance?", -1, &textRect, DT_CENTER | DT_TOP | DT_SINGLELINE);
+        DrawTextW(hdc, L"Can you make the stick man Dance?  (E = enroll new user)", -1, &textRect, DT_CENTER | DT_TOP | DT_SINGLELINE);
         SelectObject(hdc, oldFont);
         DeleteObject(font);
+        // When re-auth is running, show "Hold still, we are authenticating you"
+        if (g_authenticating) {
+            RECT authRect = { 0, rc.bottom / 2 - 30, rc.right, rc.bottom / 2 + 30 };
+            SetTextColor(hdc, RGB(255, 240, 160));
+            HFONT authFont = CreateFontW(20, 0, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE,
+                DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY,
+                FF_DONTCARE, L"Segoe UI");
+            HGDIOBJ oldAuthFont = SelectObject(hdc, authFont);
+            DrawTextW(hdc, L"Hold still, we are authenticating you", -1, &authRect, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+            SelectObject(hdc, oldAuthFont);
+            DeleteObject(authFont);
+        }
         EndPaint(hwnd, &ps);
         return 0;
     }
     case WM_TIMER:
         InvalidateRect(hwnd, nullptr, FALSE);
         return 0;
-    case WM_KEYDOWN:
+    case WM_KEYDOWN: {
         if (wParam == VK_ESCAPE) {
             g_quit = true;
             PostQuitMessage(0);
+            return 0;
+        }
+        if (wParam == 'E' || wParam == 'e') {
+            void* pctx = reinterpret_cast<void*>(GetWindowLongPtrW(hwnd, GWLP_USERDATA));
+            if (pctx) {
+                struct GameContext* ctx = static_cast<struct GameContext*>(pctx);
+                do_enroll_from_game(ctx);
+            }
         }
         return 0;
+    }
     case WM_CLOSE:
         g_quit = true;
         DestroyWindow(hwnd);
@@ -373,7 +476,7 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
     return DefWindowProc(hwnd, msg, wParam, lParam);
 }
 
-bool run_stick_man_window_win32() {
+bool run_stick_man_window_win32(GameContext* ctx) {
     WNDCLASSEXW wc = {};
     wc.cbSize = sizeof(wc);
     wc.style = CS_HREDRAW | CS_VREDRAW;
@@ -386,7 +489,7 @@ bool run_stick_man_window_win32() {
 
     HWND hwnd = CreateWindowExW(0, wc.lpszClassName, L"Simon Says - Stick Man",
         WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
-        POSE_WINDOW_W + 16, POSE_WINDOW_H + 39, nullptr, nullptr, wc.hInstance, nullptr);
+        POSE_WINDOW_W + 16, POSE_WINDOW_H + 39, nullptr, nullptr, wc.hInstance, ctx);
     if (!hwnd) return false;
 
     ShowWindow(hwnd, SW_SHOW);
@@ -537,18 +640,20 @@ int main(int argc, char** argv) {
     std::cout << "Authenticated as: " << auth_cb.authenticated_user_id << std::endl;
     g_authenticated = true;
 
-    // 3) Pose stream (PoseEstimationOnly) for smooth stick man; re-auth every 10 s so mask/wrong person stops it
+    // 3) Pose stream via SDK 3 DetectPoses; re-auth every 10 s so mask/wrong person freezes stick man
     constexpr int REAUTH_INTERVAL_SEC = 10;
-    dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::PoseEstimationOnly;
-    authenticator.SetDeviceConfig(dev_config);
-
-    PoseLoopCallback pose_cb;
     std::thread pose_thread;
     std::mutex pose_thread_mutex;
 
     auto run_pose_loop = [&]() {
         g_pose_loop_running = true;
-        authenticator.AuthenticateLoop(pose_cb);
+        using PoseCallback = RealSenseID::FaceAuthenticator::PoseCallback;
+        PoseCallback on_pose = [](const std::vector<RealSenseID::PersonPose>& poses, unsigned int /*ts*/,
+                                  RealSenseID::AuthenticateStatus /*status*/) {
+            if (g_authenticated && !poses.empty()) update_poses(poses);
+            return !g_quit;
+        };
+        authenticator.DetectPoses(on_pose, true);
         g_pose_loop_running = false;
     };
 
@@ -563,11 +668,11 @@ int main(int argc, char** argv) {
             if (g_quit) break;
             dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
             authenticator.SetDeviceConfig(dev_config);
+            g_authenticating = true;
             AuthCallback reauth_cb;
             authenticator.Authenticate(reauth_cb);
+            g_authenticating = false;
             g_authenticated = (reauth_cb.result == RealSenseID::AuthenticateStatus::Success);
-            dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::PoseEstimationOnly;
-            authenticator.SetDeviceConfig(dev_config);
             pose_thread = std::thread(run_pose_loop);
         }
     });
@@ -588,9 +693,37 @@ int main(int argc, char** argv) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) g_quit = true;
-            if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) g_quit = true;
+            if (e.type == SDL_KEYDOWN) {
+                if (e.key.keysym.sym == SDLK_ESCAPE) g_quit = true;
+                if (e.key.keysym.sym == SDLK_e || e.key.keysym.sym == SDLK_E) g_want_enroll = true;
+            }
         }
         if (g_quit) break;
+
+        // In-game enroll on E key (random user id)
+        if (g_want_enroll) {
+            g_want_enroll = false;
+            std::lock_guard<std::mutex> lock(pose_thread_mutex);
+            authenticator.Cancel();
+            if (pose_thread.joinable()) pose_thread.join();
+            if (!g_quit) {
+                dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
+                authenticator.SetDeviceConfig(dev_config);
+                std::string user_id = make_random_user_id();
+                EnrollCallback enroll_cb;
+                auto st = authenticator.Enroll(enroll_cb, user_id.c_str());
+                if (st == RealSenseID::Status::Ok) {
+                    g_authenticated = true;
+                    std::cout << "Enrolled new user: " << user_id << std::endl;
+                }
+                if (!g_quit) pose_thread = std::thread(run_pose_loop);
+            }
+        }
+
+        if (g_authenticating)
+            SDL_SetWindowTitle(window, "Hold still, we are authenticating you");
+        else
+            SDL_SetWindowTitle(window, "Simon Says - Can you make the stick man Dance? (E = enroll)");
 
         SDL_SetRenderDrawColor(renderer, 20, 20, 30, 255);
         SDL_RenderClear(renderer);
@@ -613,8 +746,16 @@ int main(int argc, char** argv) {
     }
 #else
 #ifdef _WIN32
-    if (!run_stick_man_window_win32())
-        std::cerr << "Could not create stick man window." << std::endl;
+    {
+        GameContext win_ctx;
+        win_ctx.auth = &authenticator;
+        win_ctx.dev_cfg = &dev_config;
+        win_ctx.pose_thread = &pose_thread;
+        win_ctx.pose_mutex = &pose_thread_mutex;
+        win_ctx.start_pose_loop = run_pose_loop;
+        if (!run_stick_man_window_win32(&win_ctx))
+            std::cerr << "Could not create stick man window." << std::endl;
+    }
 #else
     std::cout << "Stick man window disabled (no SDL2). Press Enter to exit." << std::endl;
     std::cin.get();

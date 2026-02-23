@@ -45,7 +45,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -84,8 +83,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -140,8 +137,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -245,7 +240,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -278,8 +272,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -329,7 +321,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -382,9 +373,6 @@ events:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.exe"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link.com"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link.exe"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -445,8 +433,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -494,7 +480,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -527,8 +512,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -576,7 +559,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -627,8 +609,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -676,7 +656,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -709,8 +688,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -761,7 +738,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -824,8 +800,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -856,8 +830,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-7knejb"
-      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-7knejb"
+      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-q87c57"
+      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-q87c57"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -867,11 +841,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-7knejb'
+        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-q87c57'
         
-        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_2bc29
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2bc29.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_2bc29.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_2bc29.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2bc29.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_2bc29.exe /implib:cmTC_2bc29.lib /pdb:cmTC_2bc29.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_16584
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_16584.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_16584.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_16584.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_16584.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_16584.exe /implib:cmTC_16584.lib /pdb:cmTC_16584.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -907,7 +881,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
     description: "C compiler"
@@ -959,8 +933,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -990,7 +962,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -1021,8 +993,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -1058,7 +1028,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
@@ -1091,7 +1061,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
@@ -1105,7 +1075,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -1132,7 +1102,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1197,9 +1166,6 @@ events:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.exe"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link.com"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link.exe"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -1296,8 +1262,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -1324,12 +1288,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-pbuyv9"
-      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-pbuyv9"
+      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-oimhhf"
+      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-oimhhf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1338,11 +1302,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-pbuyv9'
+        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-oimhhf'
         
-        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_b4136
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b4136.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_b4136.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_b4136.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b4136.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_b4136.exe /implib:cmTC_b4136.lib /pdb:cmTC_b4136.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_cdbb4
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_cdbb4.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_cdbb4.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_cdbb4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cdbb4.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_cdbb4.exe /implib:cmTC_cdbb4.lib /pdb:cmTC_cdbb4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -1350,7 +1314,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -1368,7 +1332,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:5 (project)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:5 (project)"
     message: |
       Running the C compiler's linker: "C:/PROGRA~2/MICROS~2/2022/BUILDT~1/VC/Tools/MSVC/1444~1.352/bin/Hostx64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35222.0
@@ -1376,7 +1340,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/CMakeLists.txt:20 (find_program)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/CMakeLists.txt:20 (find_program)"
     mode: "program"
     variable: "CCACHE_PROGRAM"
     description: "Path to a program."
@@ -1403,7 +1367,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1468,9 +1431,6 @@ events:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/ccache.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/ccache.exe"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/ccache"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/ccache.com"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/ccache.exe"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/ccache"
       - "C:/Windows/System32/ccache.com"
       - "C:/Windows/System32/ccache.exe"
       - "C:/Windows/System32/ccache"
@@ -1567,8 +1527,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -1597,12 +1555,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt:5 (find_package)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt:5 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-gefokv"
-      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-gefokv"
+      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-cbqzbb"
+      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-cbqzbb"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1612,13 +1570,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-gefokv'
+        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-cbqzbb'
         
-        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_f6275
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f6275.dir\\src.c.obj /FdCMakeFiles\\cmTC_f6275.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gefokv\\src.c
-        FAILED: CMakeFiles/cmTC_f6275.dir/src.c.obj 
-        C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f6275.dir\\src.c.obj /FdCMakeFiles\\cmTC_f6275.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gefokv\\src.c
-        C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gefokv\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_0961e
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_0961e.dir\\src.c.obj /FdCMakeFiles\\cmTC_0961e.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cbqzbb\\src.c
+        FAILED: CMakeFiles/cmTC_0961e.dir/src.c.obj 
+        C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_0961e.dir\\src.c.obj /FdCMakeFiles\\cmTC_0961e.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cbqzbb\\src.c
+        C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cbqzbb\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -1628,12 +1586,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt:5 (find_package)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt:5 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-bs5ov4"
-      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-bs5ov4"
+      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-vnqf47"
+      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-vnqf47"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1643,14 +1601,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-bs5ov4'
+        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-vnqf47'
         
-        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_bfcc5
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_bfcc5.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_bfcc5.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs5ov4\\CheckFunctionExists.c
-        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_bfcc5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bfcc5.dir\\CheckFunctionExists.c.obj  /out:cmTC_bfcc5.exe /implib:cmTC_bfcc5.lib /pdb:cmTC_bfcc5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_bfcc5.exe 
-        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_bfcc5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bfcc5.dir\\CheckFunctionExists.c.obj  /out:cmTC_bfcc5.exe /implib:cmTC_bfcc5.lib /pdb:cmTC_bfcc5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bfcc5.dir\\CheckFunctionExists.c.obj /out:cmTC_bfcc5.exe /implib:cmTC_bfcc5.lib /pdb:cmTC_bfcc5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_bfcc5.dir/intermediate.manifest CMakeFiles\\cmTC_bfcc5.dir/manifest.res" failed (exit code 1104) with the following output:\x0d
+        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_01853
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_01853.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_01853.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vnqf47\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_01853.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_01853.dir\\CheckFunctionExists.c.obj  /out:cmTC_01853.exe /implib:cmTC_01853.lib /pdb:cmTC_01853.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_01853.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_01853.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_01853.dir\\CheckFunctionExists.c.obj  /out:cmTC_01853.exe /implib:cmTC_01853.lib /pdb:cmTC_01853.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_01853.dir\\CheckFunctionExists.c.obj /out:cmTC_01853.exe /implib:cmTC_01853.lib /pdb:cmTC_01853.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_01853.dir/intermediate.manifest CMakeFiles\\cmTC_01853.dir/manifest.res" failed (exit code 1104) with the following output:\x0d
         LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d\x0d
         ninja: build stopped: subcommand failed.
         
@@ -1661,12 +1619,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
-      - "C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard/src/CMakeLists.txt:5 (find_package)"
+      - "C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24/src/CMakeLists.txt:5 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-leunca"
-      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-leunca"
+      source: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-4e62iw"
+      binary: "C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-4e62iw"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1676,14 +1634,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-leunca'
+        Change Dir: 'C:/Users/cmatthie/Projects/simonsays/build/CMakeFiles/CMakeScratch/TryCompile-4e62iw'
         
-        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_1967d
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1967d.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_1967d.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-leunca\\CheckFunctionExists.c
-        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_1967d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1967d.dir\\CheckFunctionExists.c.obj  /out:cmTC_1967d.exe /implib:cmTC_1967d.lib /pdb:cmTC_1967d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_1967d.exe 
-        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_1967d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1967d.dir\\CheckFunctionExists.c.obj  /out:cmTC_1967d.exe /implib:cmTC_1967d.lib /pdb:cmTC_1967d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1967d.dir\\CheckFunctionExists.c.obj /out:cmTC_1967d.exe /implib:cmTC_1967d.lib /pdb:cmTC_1967d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1967d.dir/intermediate.manifest CMakeFiles\\cmTC_1967d.dir/manifest.res" failed (exit code 1104) with the following output:\x0d
+        Run Build Command(s): C:\\Users\\cmatthie\\Projects\\simonsays\\tools\\ninja.exe -v cmTC_09c39
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_09c39.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_09c39.dir\\ /FS -c C:\\Users\\cmatthie\\Projects\\simonsays\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4e62iw\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_09c39.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_09c39.dir\\CheckFunctionExists.c.obj  /out:cmTC_09c39.exe /implib:cmTC_09c39.lib /pdb:cmTC_09c39.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_09c39.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_09c39.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_09c39.dir\\CheckFunctionExists.c.obj  /out:cmTC_09c39.exe /implib:cmTC_09c39.lib /pdb:cmTC_09c39.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_09c39.dir\\CheckFunctionExists.c.obj /out:cmTC_09c39.exe /implib:cmTC_09c39.lib /pdb:cmTC_09c39.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_09c39.dir/intermediate.manifest CMakeFiles\\cmTC_09c39.dir/manifest.res" failed (exit code 1104) with the following output:\x0d
         LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d\x0d
         ninja: build stopped: subcommand failed.
         
@@ -1825,14 +1783,6 @@ events:
         reason: "no_exist"
       -
         path: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/sdl2-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/cmatthie/Projects/simonsays/build/SDL2Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/cmatthie/Projects/simonsays/build/sdl2-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -1994,8 +1944,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -2092,9 +2040,6 @@ events:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/include/SDL2/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/include/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/include/SDL2/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/include/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/include/SDL2/"
       - "C:/Windows/System32/include/"
       - "C:/Windows/System32/"
@@ -2222,9 +2167,6 @@ events:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/include/SDL2/SDL.h"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/include/SDL.h"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/SDL.h"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/include/SDL2/SDL.h"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/include/SDL.h"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/SDL.h"
       - "C:/Windows/System32/include/SDL2/SDL.h"
       - "C:/Windows/System32/include/SDL.h"
       - "C:/Windows/System32/SDL.h"
@@ -2309,8 +2251,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"
@@ -2373,7 +2313,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2415,7 +2354,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
-      - "C:/Users/cmatthie/Projects/simonsays/build/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2456,8 +2394,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
-        - "C:\\Users\\cmatthie\\Projects\\simonsays\\build\\bin"
         - "C:\\windows\\system32"
         - "C:\\windows"
         - "C:\\windows\\System32\\Wbem"

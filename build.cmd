@@ -2,7 +2,7 @@
 REM Simon Says - Build script. Run from project root.
 REM Uses VS 2022 Build Tools + Ninja (bundled in tools\). No Visual Studio IDE required.
 setlocal
-set "RSID_SDK=C:/Users/cmatthie/Documents/SDK_2.7.3.0701_471615c_Standard"
+set "RSID_SDK=C:/Users/cmatthie/Downloads/for-mathiew/for-mathiew/SDK_3.0.2.1802_67dfd24"
 set "PROJECT_ROOT=%~dp0"
 set "BUILD_DIR=%PROJECT_ROOT%build"
 set "NINJA_EXE=%PROJECT_ROOT%tools\ninja.exe"
