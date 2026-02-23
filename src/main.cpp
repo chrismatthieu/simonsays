@@ -15,6 +15,7 @@
 #endif
 #include <atomic>
 #include <chrono>
+#include <cmath>
 #include <condition_variable>
 #include <csignal>
 #include <cstdlib>
@@ -285,7 +286,7 @@ bool init_sdl(SDL_Window*& window, SDL_Renderer*& renderer) {
     return true;
 }
 
-void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::PersonPose>& poses) {
+void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::PersonPose>& poses, bool authenticated) {
     if (poses.empty()) return;
     int clientW = 0, clientH = 0;
     if (SDL_GetRendererOutputSize(renderer, &clientW, &clientH) != 0 || clientW <= 0 || clientH <= 0)
@@ -336,6 +337,68 @@ void draw_stick_man(SDL_Renderer* renderer, const std::vector<RealSenseID::Perso
         SDL_Rect r = { cx - 4, cy - 4, 8, 8 };
         SDL_RenderFillRect(renderer, &r);
     }
+
+    // Smiley (authenticated) or frowny (not authenticated) on head
+    auto head_center = [&]() -> std::pair<double, double> {
+        if (p.lm_x[0] != 0 || p.lm_y[0] != 0) return { static_cast<double>(p.lm_x[0]), static_cast<double>(p.lm_y[0]) };
+        if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
+            return { (p.lm_x[1] + p.lm_x[2]) * 0.5, (p.lm_y[1] + p.lm_y[2]) * 0.5 };
+        return { centerX, minY + poseH * 0.15 };
+    };
+    double hx = 0, hy = 0;
+    { auto [x, y] = head_center(); hx = x; hy = y; }
+    double shoulder_mid_y = (p.lm_y[5] + p.lm_y[6]) * 0.5;
+    if (p.lm_x[5] == 0 && p.lm_y[5] == 0 && p.lm_x[6] == 0 && p.lm_y[6] == 0) shoulder_mid_y = hy + poseH * 0.15;
+    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
+    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
+    auto [face_cx, face_cy] = to_screen(hx, hy);
+    int face_r = static_cast<int>(head_radius_cam * scale);
+    if (face_r < 8) face_r = 8;
+    int eye_r = (face_r >= 20) ? (face_r / 4) : 2;
+    int eye_off = face_r / 2;
+
+    auto sdl_circle = [&](int cx, int cy, int r) {
+        const int n = 24;
+        const double pi2 = 6.28318530718;
+        int px = cx + r, py = cy;
+        for (int i = 1; i <= n; i++) {
+            double a = (i * pi2) / n;
+            int x = cx + static_cast<int>(r * std::cos(a));
+            int y = cy + static_cast<int>(r * std::sin(a));
+            SDL_RenderDrawLine(renderer, px, py, x, y);
+            px = x; py = y;
+        }
+    };
+    SDL_SetRenderDrawColor(renderer, 255, 220, 0, 255);
+    sdl_circle(face_cx, face_cy, face_r);
+    SDL_SetRenderDrawColor(renderer, 40, 30, 20, 255);
+    SDL_Rect e1 = { face_cx - eye_off - eye_r, face_cy - eye_off - eye_r, 2 * eye_r, 2 * eye_r };
+    SDL_Rect e2 = { face_cx + eye_off - eye_r, face_cy - eye_off - eye_r, 2 * eye_r, 2 * eye_r };
+    SDL_RenderFillRect(renderer, &e1);
+    SDL_RenderFillRect(renderer, &e2);
+    SDL_SetRenderDrawColor(renderer, 40, 30, 20, 255);
+    int prev_mx = 0, prev_my = 0;
+    if (authenticated) {
+        for (int i = 0; i <= 12; i++) {
+            double t = i / 12.0;
+            double a = 3.14159 * 0.2 + t * 3.14159 * 0.6;
+            int mx = face_cx + static_cast<int>(face_r * 0.7 * std::cos(a));
+            int my = face_cy + static_cast<int>(face_r * 0.5 * std::sin(a));
+            if (i > 0) SDL_RenderDrawLine(renderer, prev_mx, prev_my, mx, my);
+            prev_mx = mx; prev_my = my;
+        }
+    } else {
+        // Frown: same horizontal span as smile (mouth position) but curve inverted (∩)
+        const double sin20 = std::sin(3.14159 * 0.2);
+        for (int i = 0; i <= 12; i++) {
+            double t = i / 12.0;
+            double a = 3.14159 * 0.2 + t * 3.14159 * 0.6;
+            int mx = face_cx + static_cast<int>(face_r * 0.7 * std::cos(a));
+            int my = face_cy + static_cast<int>(face_r * 0.5 * (2.0 * sin20 - std::sin(a)));
+            if (i > 0) SDL_RenderDrawLine(renderer, prev_mx, prev_my, mx, my);
+            prev_mx = mx; prev_my = my;
+        }
+    }
 }
 #endif
 
@@ -372,7 +435,7 @@ static void do_enroll_from_game(GameContext* ctx) {
     if (ctx->pose_thread && !g_quit) *ctx->pose_thread = std::thread(ctx->start_pose_loop);
 }
 
-void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<RealSenseID::PersonPose>& poses) {
+void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<RealSenseID::PersonPose>& poses, bool authenticated) {
     if (poses.empty() || clientW <= 0 || clientH <= 0) return;
     const auto& p = poses[0];
     // Bounding box of valid keypoints (camera space)
@@ -423,6 +486,57 @@ void draw_stick_man_gdi(HDC hdc, int clientW, int clientH, const std::vector<Rea
         auto [cx, cy] = to_screen(static_cast<double>(p.lm_x[i]), static_cast<double>(p.lm_y[i]));
         Ellipse(hdc, cx - 5, cy - 5, cx + 5, cy + 5);
     }
+
+    // Smiley (authenticated) or frowny (not authenticated) on head
+    auto head_center = [&]() -> std::pair<double, double> {
+        if (p.lm_x[0] != 0 || p.lm_y[0] != 0) return { static_cast<double>(p.lm_x[0]), static_cast<double>(p.lm_y[0]) };
+        if ((p.lm_x[1] != 0 || p.lm_y[1] != 0) && (p.lm_x[2] != 0 || p.lm_y[2] != 0))
+            return { (p.lm_x[1] + p.lm_x[2]) * 0.5, (p.lm_y[1] + p.lm_y[2]) * 0.5 };
+        return { centerX, minY + poseH * 0.15 };
+    };
+    double hx = 0, hy = 0;
+    { auto [x, y] = head_center(); hx = x; hy = y; }
+    double shoulder_mid_y = (p.lm_y[5] + p.lm_y[6]) * 0.5;
+    if (p.lm_x[5] == 0 && p.lm_y[5] == 0 && p.lm_x[6] == 0 && p.lm_y[6] == 0) shoulder_mid_y = hy + poseH * 0.15;
+    double head_radius_cam = 0.35 * std::abs(hy - shoulder_mid_y);
+    if (head_radius_cam < 20.0) head_radius_cam = 20.0;
+    auto [face_cx, face_cy] = to_screen(hx, hy);
+    int face_r = static_cast<int>(head_radius_cam * scale);
+    if (face_r < 8) face_r = 8;
+    int eye_r = (face_r >= 20) ? (face_r / 4) : 2;
+    int eye_off = face_r / 2;
+
+    SetDCBrushColor(hdc, RGB(255, 220, 0));
+    SetDCPenColor(hdc, RGB(255, 200, 0));
+    Ellipse(hdc, face_cx - face_r, face_cy - face_r, face_cx + face_r, face_cy + face_r);
+    SetDCBrushColor(hdc, RGB(40, 30, 20));
+    SetDCPenColor(hdc, RGB(40, 30, 20));
+    Ellipse(hdc, face_cx - eye_off - eye_r, face_cy - eye_off - eye_r, face_cx - eye_off + eye_r, face_cy - eye_off + eye_r);
+    Ellipse(hdc, face_cx + eye_off - eye_r, face_cy - eye_off - eye_r, face_cx + eye_off + eye_r, face_cy - eye_off + eye_r);
+    SelectObject(hdc, GetStockObject(NULL_BRUSH));
+    SetDCPenColor(hdc, RGB(40, 30, 20));
+    bool first = true;
+    if (authenticated) {
+        for (int i = 0; i <= 12; i++) {
+            double t = i / 12.0;
+            double a = 3.14159 * 0.2 + t * 3.14159 * 0.6;
+            int mx = face_cx + static_cast<int>(face_r * 0.7 * std::cos(a));
+            int my = face_cy + static_cast<int>(face_r * 0.5 * std::sin(a));
+            if (first) { MoveToEx(hdc, mx, my, nullptr); first = false; }
+            else LineTo(hdc, mx, my);
+        }
+    } else {
+        // Frown: same horizontal span as smile (mouth position) but curve inverted (∩)
+        const double sin20 = std::sin(3.14159 * 0.2);
+        for (int i = 0; i <= 12; i++) {
+            double t = i / 12.0;
+            double a = 3.14159 * 0.2 + t * 3.14159 * 0.6;
+            int mx = face_cx + static_cast<int>(face_r * 0.7 * std::cos(a));
+            int my = face_cy + static_cast<int>(face_r * 0.5 * (2.0 * sin20 - std::sin(a)));
+            if (first) { MoveToEx(hdc, mx, my, nullptr); first = false; }
+            else LineTo(hdc, mx, my);
+        }
+    }
 }
 
 LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
@@ -441,7 +555,7 @@ LRESULT CALLBACK StickManWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPar
         {
             std::vector<RealSenseID::PersonPose> poses;
             get_poses_copy(poses);
-            if (!poses.empty()) draw_stick_man_gdi(hdc, rc.right, rc.bottom, poses);
+            if (!poses.empty()) draw_stick_man_gdi(hdc, rc.right, rc.bottom, poses, g_authenticated);
         }
         // Title on top so it is never covered by the stick man
         RECT textRect = { 0, 4, rc.right, 44 };
@@ -754,7 +868,7 @@ int main(int argc, char** argv) {
         {
             std::vector<RealSenseID::PersonPose> poses;
             get_poses_copy(poses);
-            if (!poses.empty()) draw_stick_man(renderer, poses);
+            if (!poses.empty()) draw_stick_man(renderer, poses, g_authenticated);
         }
 
         SDL_RenderPresent(renderer);
