@@ -232,6 +232,25 @@ public:
     }
 };
 
+// Set device config for game auth: try RecognitionOnly once (faster); fall back to All if device returns InvalidSettings.
+// Caches result so we don't retry RecognitionOnly every re-auth (avoids repeated error logs).
+static void set_game_auth_config(RealSenseID::FaceAuthenticator& authenticator,
+                                 RealSenseID::DeviceConfig& dev_config) {
+    static bool try_recognition_only = true; // only try RecognitionOnly once per process
+    authenticator.QueryDeviceConfig(dev_config);
+    if (try_recognition_only) {
+        dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::RecognitionOnly;
+        if (authenticator.SetDeviceConfig(dev_config) != RealSenseID::Status::Ok) {
+            try_recognition_only = false;
+            dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
+            authenticator.SetDeviceConfig(dev_config);
+        }
+    } else {
+        dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
+        authenticator.SetDeviceConfig(dev_config);
+    }
+}
+
 // Pose updates only when authenticated (stick man freezes when not). Used inside DetectPoses callback (SDK 3).
 
 // Generate a random user id for in-game enrollment (no keyboard input).
@@ -337,6 +356,7 @@ static void do_enroll_from_game(GameContext* ctx) {
     ctx->auth->Cancel();
     if (ctx->pose_thread && ctx->pose_thread->joinable()) ctx->pose_thread->join();
     if (g_quit) return;
+    std::this_thread::sleep_for(std::chrono::milliseconds(150));
     if (ctx->dev_cfg) {
         ctx->dev_cfg->algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
         ctx->auth->SetDeviceConfig(*ctx->dev_cfg);
@@ -348,6 +368,7 @@ static void do_enroll_from_game(GameContext* ctx) {
         g_authenticated = true;
         std::cout << "Enrolled new user: " << user_id << std::endl;
     }
+    if (ctx->dev_cfg) set_game_auth_config(*ctx->auth, *ctx->dev_cfg);
     if (ctx->pose_thread && !g_quit) *ctx->pose_thread = std::thread(ctx->start_pose_loop);
 }
 
@@ -614,12 +635,10 @@ int main(int argc, char** argv) {
         }
     }
 
-    // 2) Authenticate once (face recognition)
+    // 2) Authenticate once (RecognitionOnly when supported, else All)
     std::cout << "Stand in front of the camera to authenticate..." << std::endl;
     RealSenseID::DeviceConfig dev_config;
-    authenticator.QueryDeviceConfig(dev_config);
-    dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
-    authenticator.SetDeviceConfig(dev_config);
+    set_game_auth_config(authenticator, dev_config);
 
     AuthCallback auth_cb;
     status = authenticator.Authenticate(auth_cb);
@@ -666,8 +685,9 @@ int main(int argc, char** argv) {
             authenticator.Cancel();
             if (pose_thread.joinable()) pose_thread.join();
             if (g_quit) break;
-            dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
-            authenticator.SetDeviceConfig(dev_config);
+            // Brief delay so device flushes after Cancel; avoids "Protocol version doesn't match" in log
+            std::this_thread::sleep_for(std::chrono::milliseconds(150));
+            set_game_auth_config(authenticator, dev_config);
             g_authenticating = true;
             AuthCallback reauth_cb;
             authenticator.Authenticate(reauth_cb);
@@ -707,6 +727,7 @@ int main(int argc, char** argv) {
             authenticator.Cancel();
             if (pose_thread.joinable()) pose_thread.join();
             if (!g_quit) {
+                std::this_thread::sleep_for(std::chrono::milliseconds(150));
                 dev_config.algo_flow = RealSenseID::DeviceConfig::AlgoFlow::All;
                 authenticator.SetDeviceConfig(dev_config);
                 std::string user_id = make_random_user_id();
@@ -716,6 +737,7 @@ int main(int argc, char** argv) {
                     g_authenticated = true;
                     std::cout << "Enrolled new user: " << user_id << std::endl;
                 }
+                set_game_auth_config(authenticator, dev_config);
                 if (!g_quit) pose_thread = std::thread(run_pose_loop);
             }
         }
