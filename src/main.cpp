@@ -5,6 +5,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 #include "RealSenseID/FaceAuthenticator.h"
+#include "RealSenseID/AuthenticateStatus.h"
+#include "RealSenseID/Status.h"
 #include "RealSenseID/FaceRect.h"
 #include "RealSenseID/FacePose.h"
 #include "RealSenseID/DiscoverDevices.h"
@@ -727,25 +729,35 @@ int main(int argc, char** argv) {
     }
     if (choice == 'y' || choice == 'Y') {
         EnrollCallback enroll_cb;
-        std::cout << "Enrolling user '" << DEFAULT_USER_ID << "' - follow the pose hints.\n";
-        status = authenticator.Enroll(enroll_cb, DEFAULT_USER_ID);
+        std::string enroll_id = DEFAULT_USER_ID;
+        std::cout << "Enrolling user '" << enroll_id << "' - follow the pose hints.\n";
+        status = authenticator.Enroll(enroll_cb, enroll_id.c_str());
+        if (status == RealSenseID::Status::DuplicateUserId) {
+            enroll_id = make_random_user_id();
+            std::cout << "'" << DEFAULT_USER_ID << "' is already on this device. Trying new user '" << enroll_id << "'...\n";
+            status = authenticator.Enroll(enroll_cb, enroll_id.c_str());
+        }
         if (status != RealSenseID::Status::Ok) {
-            std::cerr << "Enroll failed (status " << static_cast<int>(status) << ")." << std::endl;
-            if (status == RealSenseID::Status::Error) {
-                std::cerr << "  The F460 may require secure (paired) mode for enrollment." << std::endl;
-                std::cerr << "  Try: (1) Enroll using Intel's rsid-viewer first, or (2) Answer 'n' here and try Authenticate if you already have a user." << std::endl;
+            std::cerr << "Enroll failed: " << RealSenseID::Description(status) << " (code " << static_cast<int>(status) << ")." << std::endl;
+            if (status == RealSenseID::Status::DuplicateUserId) {
+                std::cout << "A user with that id already exists. Continuing to authentication (use your enrolled face).\n\n";
+            } else {
+                if (status == RealSenseID::Status::Error) {
+                    std::cerr << "  The F460 may require secure (paired) mode for enrollment." << std::endl;
+                    std::cerr << "  Try: (1) Enroll using Intel's rsid-viewer first, or (2) Answer 'n' here and try Authenticate if you already have a user." << std::endl;
+                }
+                char cont = 'y';
+                if (interactive) {
+                    std::cout << "Continue to authentication anyway? (y/n): " << std::flush;
+                    std::cin >> cont;
+                }
+                if (cont != 'y' && cont != 'Y') {
+                    g_authenticator_for_ctrl_c = nullptr;
+                    authenticator.Disconnect();
+                    return 1;
+                }
+                std::cout << std::endl;
             }
-            char cont = 'y';
-            if (interactive) {
-                std::cout << "Continue to authentication anyway? (y/n): " << std::flush;
-                std::cin >> cont;
-            }
-            if (cont != 'y' && cont != 'Y') {
-                g_authenticator_for_ctrl_c = nullptr;
-                authenticator.Disconnect();
-                return 1;
-            }
-            std::cout << std::endl;
         } else {
             std::cout << "Enrollment done.\n" << std::endl;
         }
@@ -766,7 +778,16 @@ int main(int argc, char** argv) {
     }
 
     if (auth_cb.result != RealSenseID::AuthenticateStatus::Success) {
+        RealSenseID::AuthenticateStatus r = auth_cb.result.load();
         std::cerr << "Authentication failed. Only enrolled users can play." << std::endl;
+        std::cerr << "Reason: " << RealSenseID::Description(r) << std::endl;
+        if (r == RealSenseID::AuthenticateStatus::NoFaceDetected)
+            std::cerr << "  Tip: Face the camera before this step and stay in frame until auth finishes.\n";
+        else if (r == RealSenseID::AuthenticateStatus::MedicalMask || r == RealSenseID::AuthenticateStatus::Sunglasses ||
+                 r == RealSenseID::AuthenticateStatus::InvalidFeatures)
+            std::cerr << "  Tip: Remove mask and tinted glasses; improve lighting.\n";
+        else if (r == RealSenseID::AuthenticateStatus::PersonNotFound)
+            std::cerr << "  Tip: Enroll first (answer y at Enroll or use Intel rsid-viewer).\n";
         g_authenticator_for_ctrl_c = nullptr;
         authenticator.Disconnect();
         return 1;
@@ -817,6 +838,8 @@ int main(int argc, char** argv) {
         std::lock_guard<std::mutex> lock(pose_thread_mutex);
         pose_thread = std::thread(run_pose_loop);
     }
+
+    std::cout << "Opening stick man window...\n" << std::flush;
 
 #ifndef SIMONSAYS_NO_SDL
     SDL_Window* window = nullptr;
